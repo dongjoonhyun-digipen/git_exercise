@@ -4,19 +4,14 @@ Move an object exercise
 spring.2020.4.10
 \
 */
-let x = 0
-let y = 200
 function setup() {
   createCanvas(400, 400);
+  
+  background(250)
 }
 
 function draw() {
-  background(0);
-  fill(230,230,10)
-  
-  circle(x,y,50)
-  
-  x =(x+3)% 400
-
-  
+  noStroke()
+  fill('#68d85c40')
+  circle(mouseX,mouseY,30)
 }
